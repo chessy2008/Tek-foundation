@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tek form</title>
+    <link rel="stylesheet" href="/css/membershipform.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lobster&family=Playwrite+IT+Moderna:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="/images/logooooooooo.png" alt="logo" height="70px">
+        </div>
+        <div class="nav-wrapper">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="nav-right">
+                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <button class="nav-btn"><a href="./donate.html">Donate</a></button>
+            </div>
+    </header>
+    <section class="member-section">
+        <div class="overlay"></div>
+        <div class="div5">
+            <h2 class="h2">"No matter how little,You can aid a smile"</h2>
+        </div>
+    </section>
+    <div class="div1">
+        <h2>MEMBERSHIP APPLICATION FORM</h2>
+    </div>
+    <div class="div2">
+        <h4>Join Us-Be Part Of Something Bigger</h4>
+    </div>
+    <p class="p1">We’re delighted to have you as a valued member. Your participation brings new energy and perspective
+        to our community. We look forward to supporting your growth and collaboration as we achieve great things
+        together.As a member, you will have access to exclusive resources, events, and forums that are designed to
+        empower and inspire. We encourage you to get involved, share your ideas, and make the most of the opportunities
+        available to you. Your voice matters, and your presence adds value to our shared mission.</p>
+
+    <!--Form-->
+    <form id="membershipForm" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <div class="div-label">
+            <!--Full Name-->
+            <label for="fname">Name</label><br>
+            <div >
+                <input name="fieldName" id="fname" placeholder="*First Name" required>
+                <input name="fieldName" id="lname" placeholder="*Last Name" required><br>
+            </div>
+            <!--Gender-->
+            <label>Gender</label><br>
+            <select name="fieldName" id="Gender">
+                <option value="select">Select</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Other">Other</option>
+            </select><br>
+            <!--Occupation-->
+            <label>Occupation</label><br>
+            <select name="fieldName" id="Occupation">
+                <option value="select">Select</option>
+                <option value="Employed">Employed</option>
+                <option value="Self-Employed">Self-Employed</option>
+                <option value="Unemployed">Unemployed</option>
+            </select><br>
+            <!--Email-->
+            <label>Email</label><br>
+            <input name="fieldName" type="email" id="email" required><br>
+            <!--Phone Number-->
+            <label>Phone Number</label><br>
+            <input name="fieldName" type="tel" id="phone" required><br>
+            <label class="label">Work Address</label><br>
+            <input name="fieldName" id="workAddress" required><br>
+            <label class="label">Home Address</label><br>
+            <input name="fieldName" id="homeAddress" required><br>
+            <hr>
+
+            <div class="div-check" aria-required="">
+                <h4 class="h4">How Did You Hear Of Us? </h4>
+                <div>
+                    <label class="label">Facebook
+                    <input type="checkbox"> </label><br>
+                   
+                    <label class="label">Twitter
+                    <input type="checkbox" required> </label><br>
+                   
+                    <label class="label">Instagram
+                    <input type="checkbox" required></label><br>
+                    <label class="label">Linkeldn
+                    <input type="checkbox" required></label><br>
+                    <label class="label">Youtube
+                    <input type="checkbox" required></label><br>
+                    <label>Friends/Colleagues
+                    <input type="checkbox" required></label>
+                    </div>
+            </div>
+            <hr>
+            <div class="div-type">
+                <h4>Why You Want To Join Our Community</h4>
+                <textarea name="subject" placeholder="Reasons" id="subject"></textarea>
+                <button type="submit" value="submit" onclick="alert('Submitted successfully')">Submit</button>
+            </div>
+
+        </div>
+
+    </form>
+   
+<!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="Donate.html">Donate Now</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="membershipform.html">Membership</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Programs</h4>
+                <ul>
+                    <li><a href="/html/rack.html">Random Act Of Care And Kindness</a></li>
+                    <li><a href="/html/santa.html">Aid A Meal Africa</a></li>
+                    <li><a href="/html/santa.html">Project-Santa</a></li>
+                    <li><a href="/html/rack.html">Give For Love</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <p>Lagos, Nigeria</p>
+                <p>09161315025</p>
+                <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=Tekfoundationnigeria@gmail.com&su=&body" target="_blank">Tekfoundationnigeria@gmail.com</a></p>
+        
+
+            </div>
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/tek_foundation?igsh=MTlrNGI0OTVlZG5uOQ%3D%3D&utm_source=qr"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/tek_foundation1?s=21&t=clhGuYSOV-WU0yFB5KiLIQ"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61568058791181&mibextid=wwXIfr&mibextid=wwXIfr"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/company/tek-foundation/"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://youtube.com/@tekfoundation?si=H5jjeCcZ7bRTtD2F"><i
+                            class="fa-brands fa-youtube"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright ©2025. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("show");
+        }
+
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Form must be filled out");
+    return false;
+  }
+}
+
+    </script>
+
+
+
+
+</body>
+
+</html>

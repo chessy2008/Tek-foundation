@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate</title>
+  <link rel="stylesheet" href="/css/donate.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lobster&family=Playwrite+IT+Moderna:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <img src="/images/logooooooooo.png" alt="logo" height="70px" >
+    </div>
+    <div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/images/home.html">Home</a></li>
+        <li><a href="/images/about.html">About Us</a></li>
+        <li><a href="/images/blog.html">Blog</a></li>
+        <li><a href="/images/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+       <div class="nav-right">
+             <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <button class="nav-btn"><a href="/images/donate.html">Donate</a></button>
+    </div>
+  </header>
+<section class="donate-section">
+  <div class="overlay"></div>
+  <div class="div1">
+    <div>
+      <h2>Together,we can turn compassion into action </h2>
+      <h3>“Giving is not just about making a donation. It’s about making a difference-Kathy Calvin</h3>
+    </div>
+    <div class="donate-button-container">
+      <button id="open-modal" class="open-modal-btn">Donate</button>
+    </div>
+  </div>
+</section>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+         <span onclick="document.getElementById('id01').style.display='none'" class="close" >&times;</span>
+        <form>
+          <h2>Your Support Is Duly Appreciated</h2>
+          <label for="">Full Name</label>
+          <input type="text" placeholder="Your Name" required>
+          <label for="">Email</label>
+          <input type="email" placeholder="Enter Email" required>
+          <label for="">Phone Number</label>
+          <input type="" placeholder="09125637823">
+          <label>Donation Amount</label>
+          <select id="Donate" required>
+            <option value="Select">Select</option>
+            <option value="1000">#1000</option>
+            <option value="2000">#2000</option>
+            <option value="5000">#5000</option>
+            <option value="10000">#10000</option>
+            <option value="Other">Other</option>
+          </select><br>
+          <label for="">Payment Method</label><br>
+          <select id="Payment" required>
+            <option value="Select">Select</option>
+            <option value="Male">Bank Transfer</option>
+            <option value="Other">Mobile Transfer</option>
+          </select><br>
+          <label class="label">In Honour Of Whom</label>
+          <select id="honour" required>
+            <option value="Select">Select</option>
+            <option value="Children">Children</option>
+            <option value="Widows">Widows</option>
+            <option value="Other">Other</option>
+          </select><br>
+          <label for="">Words Of Support</label>
+          <textarea placeholder="Your Message....." required></textarea><br>
+          <div style="margin-left:20px ;">
+            <p style="color: black; font-size: larger;"><b>Account Details:</b> </p>
+            <p> Bank Name: Moniepoint </p>
+            <p> Account Name: TEK foundation </p>
+            <p> Account Number: 7068842446</p>
+            <div class="div-btn">
+              <button type="submit" value="submit" onclick="alert('Submitted successfully')">Submit</button>
+              <button type="close" class="close-modal-btn" id="close-btn">Close</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+   <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="/html/about.html">About us</a></li>
+                    <li><a href="/html/Donate.html">Donate Now</a></li>
+                    <li><a href="/html/blog.html">Blog</a></li>
+                    <li><a href="/html/membershipform.html">Membership</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Programs</h4>
+                <ul>
+                    <li><a href="/html/rack.html">Random Act Of Care And Kindness</a></li>
+                    <li><a href="/html/santa.html">Aid A Meal Africa</a></li>
+                    <li><a href="/html/santa.html">Project-Santa</a></li>
+                    <li><a href="/html/rack.html">Give For Love</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <p>Lagos, Nigeria</p>
+                <p>09161315025</p>
+                <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=Tekfoundationnigeria@gmail.com&su=&body" target="_blank">Tekfoundationnigeria@gmail.com</a></p>
+        
+
+            </div>
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/tek_foundation?igsh=MTlrNGI0OTVlZG5uOQ%3D%3D&utm_source=qr"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/tek_foundation1?s=21&t=clhGuYSOV-WU0yFB5KiLIQ"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61568058791181&mibextid=wwXIfr&mibextid=wwXIfr"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/company/tek-foundation/"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://youtube.com/@tekfoundation?si=H5jjeCcZ7bRTtD2F"><i
+                            class="fa-brands fa-youtube"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright ©2025. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/donate.js"></script>
+</body>
+
+</html>
